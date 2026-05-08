@@ -85,6 +85,22 @@ document.addEventListener('DOMContentLoaded', () => {
                 clone.querySelector('.nursing-tag').classList.add('active');
             }
 
+            // リンクボタンの生成
+            const linksContainer = clone.querySelector('.card-links');
+            if (spot.links && spot.links.length > 0) {
+                spot.links.forEach(link => {
+                    const a = document.createElement('a');
+                    a.href = link.url;
+                    a.textContent = link.title;
+                    a.className = 'card-link-btn';
+                    a.target = '_blank';
+                    a.rel = 'noopener noreferrer';
+                    linksContainer.appendChild(a);
+                });
+            } else {
+                linksContainer.style.display = 'none';
+            }
+
             spotListElement.appendChild(clone);
         });
     }
