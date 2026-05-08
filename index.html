@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokyo Kids Spots - 都内お出掛けスポット検索</title>
+    <meta name="description" content="都内のお出掛け広場、児童館、有料遊び場の情報をまとめた検索サイトです。子連れでのお出掛けをサポートします。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>🧸 Tokyo Kids Spots</h1>
+            <p>都内の「お出掛け広場」「児童館」「有料遊び場」を探そう！</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- 検索・フィルターエリア -->
+        <section class="filter-section">
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="施設名や駅名で検索..." aria-label="検索">
+            </div>
+            
+            <div class="filters">
+                <div class="filter-group">
+                    <h3>カテゴリ</h3>
+                    <div class="chip-container" id="categoryFilter">
+                        <button class="chip active" data-value="all">すべて</button>
+                        <button class="chip" data-value="児童館">児童館</button>
+                        <button class="chip" data-value="お出掛け広場">お出掛け広場</button>
+                        <button class="chip" data-value="有料遊び場">有料遊び場</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- スポット一覧エリア -->
+        <section class="results-section">
+            <div class="results-header">
+                <h2>検索結果 <span id="resultCount">0</span>件</h2>
+            </div>
+            <div id="spotList" class="spot-grid">
+                <!-- Javascriptでカードがここに生成されます -->
+                <div class="loading">データを読み込んでいます...</div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Tokyo Kids Spots. Hosted on GitHub Pages.</p>
+        </div>
+    </footer>
+
+    <!-- スポットカードのテンプレート -->
+    <template id="spotCardTemplate">
+        <article class="spot-card">
+            <div class="card-image-container">
+                <img src="" alt="" class="card-image">
+                <span class="category-badge"></span>
+                <span class="price-badge"></span>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title"></h3>
+                <p class="card-description"></p>
+                
+                <div class="info-list">
+                    <div class="info-item">
+                        <span class="info-icon">📍</span>
+                        <span class="info-text card-address"></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">🚃</span>
+                        <span class="info-text card-station"></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">🕒</span>
+                        <span class="info-text card-hours"></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">📞</span>
+                        <span class="info-text card-phone"></span>
+                    </div>
+                </div>
+
+                <div class="card-features">
+                    <span class="feature-tag diaper-tag">👶 おむつ台</span>
+                    <span class="feature-tag nursing-tag">🍼 授乳室</span>
+                </div>
+            </div>
+        </article>
+    </template>
+
+    <script src="app.js"></script>
+</body>
+</html>
