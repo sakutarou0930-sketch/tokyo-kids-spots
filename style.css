@@ -278,6 +278,17 @@ body {
     flex: 1;
 }
 
+a.card-address {
+    color: var(--text-main);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a.card-address:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
 .card-features {
     display: flex;
     flex-wrap: wrap;

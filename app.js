@@ -72,7 +72,11 @@ document.addEventListener('DOMContentLoaded', () => {
             // テキスト情報の設定
             clone.querySelector('.card-title').textContent = spot.name;
             clone.querySelector('.card-description').textContent = spot.description;
-            clone.querySelector('.card-address').textContent = spot.address;
+            
+            const addressLink = clone.querySelector('.card-address');
+            addressLink.textContent = spot.address;
+            addressLink.href = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(spot.name + ' ' + spot.address)}`;
+            
             clone.querySelector('.card-station').textContent = spot.station;
             clone.querySelector('.card-hours').textContent = spot.hours;
             clone.querySelector('.card-phone').textContent = spot.phone;
