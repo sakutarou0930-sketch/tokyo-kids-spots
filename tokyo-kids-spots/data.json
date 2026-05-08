@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "おでかけひろば まもりん",
+    "category": "お出掛け広場",
+    "address": "東京都世田谷区〇〇1-2-3",
+    "price": "無料",
+    "diaper_table": true,
+    "nursing_room": true,
+    "hours": "10:00〜16:00",
+    "phone": "03-XXXX-XXXX",
+    "station": "〇〇駅 徒歩5分",
+    "image": "https://images.unsplash.com/photo-1595166415703-99d91fb81a5a?auto=format&fit=crop&q=80&w=600",
+    "description": "地域の子育て世代が気軽に集まれるアットホームな広場です。手遊びや絵本の読み聞かせなども行っています。"
+  },
+  {
+    "id": 2,
+    "name": "おでかけひろば ぼっこ",
+    "category": "お出掛け広場",
+    "address": "東京都世田谷区△△4-5-6",
+    "price": "無料",
+    "diaper_table": true,
+    "nursing_room": true,
+    "hours": "10:00〜15:30",
+    "phone": "03-YYYY-YYYY",
+    "station": "△△駅 徒歩3分",
+    "image": "https://images.unsplash.com/photo-1560067174-c5a3a8f37060?auto=format&fit=crop&q=80&w=600",
+    "description": "木のぬくもりが感じられるおもちゃがたくさんあります。お庭で水遊びや泥んこ遊びができる日もあります。"
+  },
+  {
+    "id": 3,
+    "name": "にこにこ児童館",
+    "category": "児童館",
+    "address": "東京都目黒区□□7-8-9",
+    "price": "無料",
+    "diaper_table": true,
+    "nursing_room": false,
+    "hours": "9:00〜18:00",
+    "phone": "03-ZZZZ-ZZZZ",
+    "station": "□□駅 徒歩10分",
+    "image": "https://images.unsplash.com/photo-1519340088955-4122d645d947?auto=format&fit=crop&q=80&w=600",
+    "description": "広い体育室があり、ボール遊びやトランポリンなど体を動かして遊べます。"
+  },
+  {
+    "id": 4,
+    "name": "キッズパーク もりのなか",
+    "category": "有料遊び場",
+    "address": "東京都渋谷区××10-11",
+    "price": "有料",
+    "diaper_table": true,
+    "nursing_room": true,
+    "hours": "10:00〜20:00",
+    "phone": "03-WWWW-WWWW",
+    "station": "××駅 直結",
+    "image": "https://images.unsplash.com/photo-1566450653303-2614cbb292ea?auto=format&fit=crop&q=80&w=600",
+    "description": "大型アスレチックやボールプール、おままごとコーナーなど充実した屋内遊戯施設です。"
+  }
+]
